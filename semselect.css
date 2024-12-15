@@ -1,0 +1,156 @@
+body {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    overflow-x: hidden;
+}
+
+
+/* For SIGN-OUT BUTTON */
+.container_of_signout_button {
+    position: absolute;
+    border: 0px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    top: 90px; /* Adjusted from 85px to 20px */
+    right: 30px;
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_signout_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_signout_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_signout_button:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+}
+
+.container_of_signout_button img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+/* For GRAY BORDER */
+.gray_border {
+    position: absolute;
+    width: 200%; /* Changed from 200% to 100% */
+    height: 70px;
+    background-color: #cecece;
+    box-sizing: border-box; /* Include padding in the width */
+    top: 75px; /* Changed from margin-top to top */
+}
+
+.text {
+    text-align: center;
+    top: 100px;
+    color: #000000; /* Fully opaque color */
+    position: relative; /* Ensure it positions correctly */
+    font-size: 40px;
+}
+
+form.sem_form {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid gray;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 15px;
+    margin: 0px auto 0; /* Center form and add space above */
+    margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; /* Use 'column' if you want to stack vertically */
+    justify-content: center; /* Center buttons inside the form */
+    align-items: center; /* Vertically center buttons if using column */
+    gap: 25px;
+}
+
+/* For LOAD BUTTONS */
+.container_of_first_sem,
+.container_of_second_sem,
+.container_of_midterm_sem {
+    position: relative; /* Changed from absolute to relative */
+    border: 2px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    font-size: 40px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+
+.container_of_first_sem a,
+.container_of_second_sem a,
+.container_of_midterm_sem a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_first_sem:hover,
+.container_of_second_sem:hover,
+.container_of_midterm_sem:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+}
+
+/*for SAVE BUTTON*/
+/* Save button styling */
+.container_of_enter_button {
+    top: 450px;
+    position: absolute; /* Changed from absolute to relative */
+    border: 2px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    background-color: #fa7979;
+    font-size: 40px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_enter_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_enter_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_enter_button:hover {
+    background-color: #c24e4e; /* Change color on hover */
+}
+
+.container_of_enter_button img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}

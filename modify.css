@@ -1,0 +1,667 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.content-container {
+    flex: 1; /* Pushes footer or bottom elements to the end */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Homepage Border */
+.homepage_border {
+    width: 200%; /* Responsive width */
+    height: 80px;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.schedule-table th {
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule-table tr:hover {
+    background-color: #ddd;
+}
+
+
+/*for SIGN-OUT BUTTON*/
+.container_of_signout_button {
+    position: absolute;
+    border: 0px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    top: 98px;
+    right: 30px;
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_signout_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_signout_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_signout_button:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+  
+}
+
+.container_of_signout_button img:hover{
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+/*for SIGN-OUT BUTTON*/
+.container_of_back_button {
+    position: absolute;
+    border: 0px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    top: 98px;
+    left: 30px;
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_back_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_back_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_back_button:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+  
+}
+
+.container_of_back_button img:hover{
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+/*for GRAY BORDER*/
+.gray_border {
+    width: 200%; /* Full width */
+    height: 70px;
+    background-color: #cecece;
+    box-sizing: border-box; /* Include padding in the width */
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+.title-container {
+    display: flex; /* Use flexbox for the container */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically (if height is set) */
+    height: 80px; /* Adjust the height as needed */
+}
+
+.title {
+    text-align: center; /* Centers text horizontally */
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+/*for add new*/
+.container_of_deletelec {
+    position: absolute;
+    border: 1px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    top: 340px;
+    left: 1100px;
+    font-size: 15px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_deletelec a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_deletelec:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+  
+}
+
+
+.info{
+    font-family: Calibri, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Aligns horizontally in flex container */
+    font-size: 20px;
+}
+
+.enter_details {
+    position: absolute;
+    top: 630px;
+    font-family: Calibri, serif;
+    font-weight: bold;
+    font-size: 20px;
+    left: 50%; /* Move element to the center */
+    transform: translateX(-50%); /* Offset it back by half its width to truly center */
+}
+
+.container_of_search {
+    position: absolute;
+    border: 1px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    top: 340px;
+    left: 1150px;
+    font-size: 15px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_search a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_search:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+  
+}
+
+/*texts*/
+.lecturer {
+    position: absolute;
+    top: 345px;
+    left: 50px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.dropdown_lec {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    width: 1000%;
+    max-width: 950px;
+    padding: 0px; /* Optional: Add some padding for aesthetics */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+.section {
+    position: absolute;
+    top: 695px;
+    left: 50px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.dropdown_sec {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    width: 1000%;
+    max-width: 1100px;
+    padding: 0px; /* Optional: Add some padding for aesthetics */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+.subject {
+    position: absolute;
+    top: 745px;
+    left: 50px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.dropdown_sub {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    width: 1000%;
+    max-width: 1100px;
+    padding: 0px; /* Optional: Add some padding for aesthetics */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+.room {
+    position: absolute;
+    top: 795px;
+    left: 50px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.dropdown_room {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    width: 1000%;
+    max-width: 1100px;
+    padding: 0px; /* Optional: Add some padding for aesthetics */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+.day {
+    position: absolute;
+    top: 845px;
+    left: 50px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.dropdown_day {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    width: 1000%;
+    max-width: 1100px;
+    padding: 0px; /* Optional: Add some padding for aesthetics */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+.start_time {
+    position: absolute;
+    top: 895px;
+    left: 50px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.dropdown_st {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    width: 1000%;
+    max-width: 1100px;
+    padding: 0px; /* Optional: Add some padding for aesthetics */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+.end_time {
+    position: absolute;
+    top: 945px;
+    left: 50px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.dropdown_et {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    width: 1000%;
+    max-width: 1100px;
+    padding: 0px; /* Optional: Add some padding for aesthetics */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+/*for SAVE BUTTON*/
+/* Save button styling */
+.container_of_save_button {
+    position: absolute; /* Fixed position to keep it at the bottom */
+    top: 1000px; /* Distance from the top of the page */
+    left: 40%; /* Start positioning from the middle of the page */
+    transform: translateX(-50%); /* Move it back to the center */
+    border: 0px solid #000000; /* Border for the container */
+    background-color: #fa7979;
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_save_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_save_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_save_button:hover {
+    background-color: #c24e4e; /* Change color on hover */
+}
+
+.container_of_save_button img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+.container_of_delete_button {
+    position: absolute; /* Fixed position to keep it at the bottom */
+    top: 1000px; /* Distance from the top of the page */
+    left: 60%; /* Start positioning from the middle of the page */
+    transform: translateX(-50%); /* Move it back to the center */
+    border: 0px solid #000000; /* Border for the container */
+    background-color: #bbbbbb;
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_delete_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_delete_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_delete_button:hover {
+    background-color: #828282; /* Change color on hover */
+}
+
+.container_of_delete_button img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+.success_message{
+    position: absolute;
+    top: 950px;
+    left: 140px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    color: rgb(255, 0, 0); /* Set default text color */
+}
+.no_class{
+    position: absolute;
+    top: 355px;
+    left: 140px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.error_message{
+    position: absolute;
+    top: 950px;
+    left: 140px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    color: rgb(255, 0, 0); /* Set default text color */
+}
+
+.conflict_message{
+    position: absolute;
+    top: 950px;
+    left: 140px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    color: rgb(255, 0, 0); /* Set default text color */
+}
+
+.invalid_sched {
+    position: absolute;
+    top: 950px;
+    left: 140px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    color: rgb(255, 0, 0); /* Set default text color */
+}
+
+
+  
+
+.dropdown_lec, .dropdown_sem, .dropdown_sub, .dropdown_sec, .dropdown_room, .dropdown_day, .dropdown_st, .dropdown_et {
+    position: relative;
+    z-index: 10; /* Ensures the dropdowns stay above the border */
+}
+
+/* Overall container */
+.content-container {
+    display: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.no_sched{
+    position: absolute;
+    top: 355px;
+    left: 140px;
+    font-size: 18px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+    color: rgb(255, 0, 0); /* Set default text color */
+}
+
+.container_of_next_button {
+    position: absolute; /* Fixed position to keep it at the bottom */
+    top: 200px; /* Distance from the top of the page */
+    left: 600px; /* Start positioning from the middle of the page */
+    transform: translateX(-50%); /* Move it back to the center */
+    border: 0px solid #000000; /* Border for the container */
+    background-color: #fa7979;
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_next_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_next_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_next_button:hover {
+    background-color: #c24e4e; /* Change color on hover */
+}
+
+.container_of_next_button img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+.container_of_modify {
+    position: absolute; /* Fixed position to keep it at the bottom */
+    top: 50px; /* Distance from the top of the page */
+    left: 400px; /* Start positioning from the middle of the page */
+    transform: translateX(-50%); /* Move it back to the center */
+    border: 0px solid #000000; /* Border for the container */
+    background-color: #fa7979;
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_modify img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_modify a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_modify:hover {
+    background-color: #c24e4e; /* Change color on hover */
+}
+
+.container_of_modify img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+
+.container_of_delete {
+    position: absolute; /* Fixed position to keep it at the bottom */
+    top: 50px; /* Distance from the top of the page */
+    left: 800px; /* Start positioning from the middle of the page */
+    transform: translateX(-50%); /* Move it back to the center */
+    border: 0px solid #000000; /* Border for the container */
+    background-color: #fa7979;
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_delete img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_delete a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_delete:hover {
+    background-color: #c24e4e; /* Change color on hover */
+}
+
+.container_of_delete img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}

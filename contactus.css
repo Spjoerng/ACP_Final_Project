@@ -1,0 +1,162 @@
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Homepage Border */
+.contact_border {
+    width: 100%; /* Responsive width */
+    height: 80px;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+/*for SIGN-OUT BUTTON*/
+.container_of_back_button {
+    position: absolute;
+    border: 0px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    top: 83px;
+    left: 30px;
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_back_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_back_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_back_button:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+  
+}
+
+.container_of_back_button img:hover{
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+/*for GRAY BORDER*/
+.gray_border {
+    width: 200%; /* Full width */
+    height: 70px;
+    background-color: #cecece;
+    box-sizing: border-box; /* Include padding in the width */
+    margin-top: -5px; /* Add margin for spacing */
+}
+
+.title{
+    text-align: center; /* Centers text horizontally */
+    font-family: Calibri, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Aligns horizontally in flex container */
+    align-items: center; /* Aligns vertically in flex container */
+    display: block;
+    font-size: 40px;
+}
+
+
+/*for border*/
+.menu_border{
+    align-content: center;
+    position:absolute;
+    top: 260px;
+    width: 1130px;
+    height: 120px;
+    background-color: #3498db00;
+    border: 1px solid #00000041; /* Border for the container */
+    border-radius: 20px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    margin-left: 30px;
+    margin-right: 30px;
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+form {
+    width: 1000px;
+    border: 2px solid gray;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Container for both images and emails */
+.action-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Space between the containers */
+    margin-top: 20px;
+}
+
+/* Individual containers for each image and its email */
+.pic_qhris, .pic_tanya, .pic_joshua, .pic_klain {
+    display: flex;
+    flex-direction: column; /* Stacks image and email vertically */
+    align-items: center;    /* Centers content horizontally */
+    background-color: #fdf1f1; /* Background color of the container */
+    border-radius: 5px;
+    padding: 15px; /* Adds space around the content within the container */
+    color: #000;
+    font-size: 14px;
+    font-family: Calibri, serif;
+    width: 220px; /* Ensures consistent container width */
+    box-sizing: border-box; /* Includes padding within the width */
+}
+
+/* Styling for images */
+.pic_qhris img, .pic_tanya img, .pic_joshua img, .pic_klain img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px; /* Rounded corners for the images */
+    margin-bottom: 10px; /* Space between the image and the email */
+}
+
+.pic_qhris:hover, .pic_tanya:hover, .pic_joshua:hover, .pic_klain:hover {
+    background-color: #ffd8d8;
+    transform: scale(1.2);
+}
+
+/* Styling for email text */
+.email {
+    text-align: center; /* Centers the email text within the container */
+    font-size: 12px;
+    color: #333; /* Slightly darker color for readability */
+    text-decoration: none; /* Remove underline */
+    
+}
+
+.email a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}

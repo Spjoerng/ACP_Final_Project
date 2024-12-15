@@ -1,0 +1,184 @@
+
+a {
+    text-decoration: none; /* Ensure no underlines for all links */
+    color: inherit; /* Make link color inherit from parent */
+}
+
+body {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    overflow-x: hidden;
+}
+
+
+/* For SIGN-OUT BUTTON */
+.container_of_signout_button {
+    position: absolute;
+    border: 0px solid #00000041; /* Border for the container */
+    border-radius: 50px; /* Rounded corners for the container */
+    padding: 10px 20px; /* Space inside the border */
+    color: rgb(0, 0, 0); /* Set default text color */
+    top: 86px; /* Adjusted from 85px to 20px */
+    right: 30px;
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    line-height: 1; /* Reset line height */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensures the button stays above other content */
+}
+
+.container_of_signout_button img {
+    width: 30px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.container_of_signout_button a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the container (black) */
+}
+
+.container_of_signout_button:hover {
+    background-color: #b3b3b33a; /* Change color on hover */
+}
+
+.container_of_signout_button img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+/* For GRAY BORDER */
+.gray_border {
+    position: absolute;
+    width: 200%; /* Changed from 200% to 100% */
+    height: 70px;
+    background-color: #cecece;
+    box-sizing: border-box; /* Include padding in the width */
+    top: 75px; /* Changed from margin-top to top */
+}
+
+/* For USER BORDER */
+.user_border {
+    position: absolute;
+    width: 120%; /* Changed from 200% to 100% */
+    height: 140px; /* Height of the element */
+    background: linear-gradient(90deg, #f73e3e, #fdc6c6); /* Gradient */
+    box-sizing: border-box; /* Include padding in the width */
+    top: 145px; /* Changed from margin-top to top */
+}
+
+.user_picture {
+    position: absolute;
+    top: 155px; /* Adjusted position to fit within the new layout */
+    left: 90px;
+}
+
+.username {
+    position: absolute;
+    top: 70px; /* Adjusted to fit with the new layout */
+    left: 230px;
+    font-size: 70px;
+    font-family: Calibri, serif;
+    font-weight: bold;
+}
+
+.department {
+    position: absolute;
+    top: 190px; /* Adjusted position */
+    left: 230px;
+    font-size: 25px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+.campus {
+    position: absolute;
+    top: 220px; /* Adjusted position */
+    left: 230px;
+    font-size: 25px;
+    font-family: Calibri, serif;
+    font-weight: lighter;
+}
+
+form.load_form {
+    width: 100%;
+    max-width: 1000px;
+    border: 2px solid gray;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 25px;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* For LOAD BUTTONS */
+.container_of_add_load,
+.container_of_modify_load,
+.container_of_print_load,
+.container_of_history,
+.container_of_backup {
+    border: 2px solid #00000041;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Calibri, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.container_of_add_load img,
+.container_of_modify_load img,
+.container_of_print_load img,
+.container_of_history img,
+.container_of_backup img {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.container_of_add_load:hover,
+.container_of_modify_load:hover,
+.container_of_print_load:hover,
+.container_of_history:hover,
+.container_of_backup:hover {
+    background-color: #b3b3b33a;
+}
+
+.container_of_add_load img:hover,
+.container_of_modify_load img:hover,
+.container_of_print_load img:hover,
+.container_of_history img:hover,
+.container_of_backup img:hover {
+    transform: scale(1.2);
+}
+
+.section_heading {
+    font-size: 30px;
+    font-family: Calibri, serif;
+    font-weight: bold;
+    text-align: left; 
+    margin-bottom: 1px; 
+    margin-top: 10px; 
+    width: 100%;
+    padding-left: 20px; 
+    grid-column: span 3; 
+}

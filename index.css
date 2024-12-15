@@ -1,0 +1,195 @@
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+/* Basic Reset */
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.imageContainer {
+    position: fixed; /* Keeps the image at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the page */
+    display: flex;
+    justify-content: center;
+    z-index: 1; /* Ensures the image is on top */
+}
+
+.imageContainer img {
+    width: 100%;
+    max-width: 100%;
+}
+
+form {
+    width: 500px;
+    border: 2px solid gray;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 350px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0; /* Reduced space between input fields */
+    border-radius: 5px;
+}
+
+.signin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fa7979;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 15px;
+    font-family: Calibri, serif;
+    margin-top: 10px; /* Reduced space between password input and sign-in button */
+    cursor: pointer;
+}
+
+.signin-container img {
+    width: 30px;
+    height: auto;
+    margin-right: 1px;
+    transition: transform 0.3s ease;
+}
+
+.signin-container:hover {
+    background-color: #c24e4e;
+}
+
+.signin-container img:hover {
+    transform: scale(1.2);
+}
+
+button {
+    background: transparent;
+    padding: 5px 10px;
+    color: #000000;
+    border: none;
+    border-radius: 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.fpass_container {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 3px 5px;
+    color: #000;
+    font-size: 10px;
+    font-family: Calibri, serif;
+    margin-top: 15px;
+}
+
+.fpass_container img {
+    width: 10px;
+    height: auto;
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+}
+
+.fpass_container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fpass_container:hover {
+    background-color: #a8a8a8;
+}
+
+.fpass_container img:hover {
+    transform: scale(1.2);
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+    width: 95%;
+}
+
+.team_container {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 3px 5px;
+    color: #000;
+    font-size: 10px;
+    font-family: Calibri, serif;
+    margin-top: 15px;
+}
+
+.team_container img {
+    width: 10px;
+    height: auto;
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+}
+
+.team_container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.team_container:hover {
+    background-color: #a8a8a8;
+}
+
+.team_container img:hover {
+    transform: scale(1.2);
+}
+
+.action-container {
+    display: flex;              /* Use flexbox for layout */
+    justify-content: center;    /* Center items horizontally */
+    align-items: center;        /* Center items vertically */
+    margin-top: 1px;          /* Space above the action container */
+    gap: 20px;                 /* Optional: Space between the two containers */
+}
+
+.fpass_container, .team_container {
+    display: flex;              /* Align content within the containers */
+    align-items: center;        /* Center items vertically */
+    background-color: #e0e0e0;  /* Match background of the original containers */
+    border-radius: 5px;        /* Maintain border radius */
+    padding: 3px 5px;          /* Match original padding */
+    color: #000;                /* Text color */
+    font-size: 10px;           /* Font size */
+    font-family: Calibri, serif;/* Font family */
+}
